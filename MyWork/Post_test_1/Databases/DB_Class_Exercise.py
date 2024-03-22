@@ -95,10 +95,11 @@ def sort_cat():
         cat = "History"
 
     print(f"MOVIES {cat}")
-    print(f"{'ID':<5}{'Name':<40}{'Year':<8}{'Mins':<8}{'Category':<10}")
+    print(f"{'ID':<5}{'Name':<36}{'Year':<8}{'Mins':<8}{'Category':<10}")
     print('-' * 75)
     for row in rows:
-        print(f"{row[0]:<5}{row[1]:<40}{row[2]:<8}{row[3]:<8}{row[4]:<10}")
+        if row != None:
+            print(f"{row[0]:<5d}{row[1]:<36}{row[2]:<8d}{row[3]:<8d}{row[4]:<10}")
 
 def add_movie():
     name = input("Name: ")
