@@ -2,21 +2,35 @@
 import locale as lc
 import tkinter as tk
 from tkinter import ttk
+from tkinter import messagebox
 
 
 def month_invest():
-    month = int(input("Enter monthly investment:\t"))
-    return month
+    try:
+        month = int(month_text.get())
+        return month
+    except ValueError:
+        messagebox.showerror("Monthly Investment Error", "Please Enter a Proper Integer")
+        future_text.set("Please Enter Proper Data")
 
 
 def year_int():
-    year = float(input("Enter yearly interest rate:\t"))
-    return year
+    try:
+        year = float(year_text.get())
+        year_text.set(str(year))
+        return year
+    except ValueError:
+        messagebox.showerror("Yearly Interest Error", "Please Enter a Proper Float/Decimal Number")
+        future_text.set("Please Enter Proper Data")
 
 
 def year_num():
-    years = int(input("Enter number of years:\t\t"))
-    return years
+    try:
+        years = int(years_text.get())
+        return years
+    except ValueError:
+        messagebox.showerror("Years Error", "Please Enter a Proper Integer")
+        future_text.set("Please Enter Proper Data")
 
 
 def total_value(monthly_investment, y_interest, years):
@@ -30,54 +44,62 @@ def total_value(monthly_investment, y_interest, years):
     return future_value
 
 
-def main():
-    while True:
-        m = month_invest()
-        y = year_int()
-        yn = year_num()
-        print(" ")
-        lc.setlocale(lc.LC_ALL, 'en-ca')
-        mi = str(lc.currency(m, grouping=True))
-        print(f"Monthly investment:\t\t\t{mi}")
-        print(f"Yearly interest rate: {y:13}")
-        print(f"Years: {yn:28}")
+def calculate_button():
+    m = month_invest()
+    y = year_int()
+    yn = year_num()
 
-        total = total_value(m, y, yn)
-        totali = str(lc.currency(total, grouping=True))
-        print(f"{'Future value:':21} {totali:>10}")
-
-        cont = input("Continue? (y/n): ").lower()
-        if cont != 'y':
-            break
+    lc.setlocale(lc.LC_ALL, 'en-ca')
+    total = total_value(m, y, yn)
+    calc = str(lc.currency(total, grouping=True))
+    future_text.set(calc)
 
 
+# Window:
 first_window = tk.Tk()
-first_window.title("Future value Calculator")
-first_window.geometry("400x300")
+first_window.title("Future Value Calculator")
+first_window.geometry("300x165")
 frame = ttk.Frame(first_window, padding="10 10 10 10")
 frame.pack(fill="both", expand=True)
 
-name_label = ttk.Label(frame, text="Name")
-name_label.grid(column=0, row=0, sticky=tk.E)
-name_text = tk.StringVar()
-name_entry = ttk.Entry(frame, width=25, textvariable=name_text)
-name_entry.grid(column=1, row=0, sticky=tk.E)
+# Monthly Investment:
+month_label = ttk.Label(frame, text="Monthly Investment:", padding="5")
+month_label.grid(column=0, row=0, sticky=tk.E)
+month_text = tk.StringVar()
+month_entry = ttk.Entry(frame, width=25, textvariable=month_text)
+month_entry.grid(column=1, row=0, sticky=tk.E)
 
-about_label = ttk.Label(frame, text="About")
-about_label.grid(column=0, row=1, sticky=tk.E)
-about_text = tk.StringVar()
-about_entry = ttk.Entry(frame, width=25, textvariable=about_text, state="readonly")
-about_entry.grid(column=1, row=1, sticky=tk.E)
+# Yearly Interest Rate
+year_label = ttk.Label(frame, text="Yearly Interest Rate:", padding="5")
+year_label.grid(column=0, row=1, sticky=tk.E)
+year_text = tk.StringVar()
+year_entry = ttk.Entry(frame, width=25, textvariable=year_text)
+year_entry.grid(column=1, row=1, sticky=tk.E)
+
+# Years:
+years_label = ttk.Label(frame, text="Years:", padding="5")
+years_label.grid(column=0, row=2, sticky=tk.E)
+years_text = tk.StringVar()
+years_entry = ttk.Entry(frame, width=25, textvariable=years_text)
+years_entry.grid(column=1, row=2, sticky=tk.E)
+
+# Future Value:
+future_label = ttk.Label(frame, text="Future Value:", padding="5")
+future_label.grid(column=0, row=3, sticky=tk.E)
+future_text = tk.StringVar()
+future_entry = ttk.Entry(frame, width=25, textvariable=future_text, state="readonly")
+future_entry.grid(column=1, row=3, sticky=tk.E)
 
 
 def destroy():
     first_window.destroy()
 
 
-Calculate = ttk.Button(frame, text="Calculate")
+# Buttons:
+Calculate = ttk.Button(frame, text="Calculate", command=calculate_button)
 Exit = ttk.Button(frame, text="Exit", command=destroy)
-Calculate.grid(column=0, row=2, sticky=tk.E)
-Exit.grid(column=1, row=2, sticky=tk.E)
+Calculate.grid(column=1, row=4, sticky=tk.W)
+Exit.grid(column=1, row=4, sticky=tk.E)
 
 
 if __name__ == "__main__":
