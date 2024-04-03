@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="253d8aa9-c38b-488c-b3f1-0695ceddce30" name="Changes" comment="dataclass and decorator">
-      <change afterPath="$PROJECT_DIR$/MyWork/Post_test_2/movies.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyWork/Post_test_2/Baseball.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/MyWork/Post_test_2/Baseball.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyWork/Post_test_2/Baseball_GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyWork/Post_test_2/Baseball_GUI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyWork/Post_test_2/Baseball_SQL.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyWork/Post_test_2/Baseball_SQL.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,69 +52,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.Alexander_Moyles.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Baseball_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Baseball_Class_iterator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Baseball_SQL.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Baseball_With_Iterator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Baseball_iterator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DB_Class_Exercise.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.Dice_Roller.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Dice_Roller2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Formatting_Numbers.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Hotel_Program_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Pig_game_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Pig_game_encap.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Practice1_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Product_Viewer_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Product_ex.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Product_program_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.SQL.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Sales_with_Inheritance.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Test_Question_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Test_Question_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Timer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.UI_Excersize.executor&quot;: &quot;Run&quot;,
-    &quot;Python.basic_binary_tree.executor&quot;: &quot;Run&quot;,
-    &quot;Python.basic_linked_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python.binaryTree_module.executor&quot;: &quot;Run&quot;,
-    &quot;Python.creating_table.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database_intro.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataclass_intro_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.datetime_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.datetime_excersise_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.decorators_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.decroator_usage_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dice_override.executor&quot;: &quot;Run&quot;,
-    &quot;Python.encapsulation_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.inheritance.executor&quot;: &quot;Run&quot;,
-    &quot;Python.message_box.executor&quot;: &quot;Run&quot;,
-    &quot;Python.movie_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python.overriding_defaults.executor&quot;: &quot;Run&quot;,
-    &quot;Python.product_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.product_encap_AM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.properties-PrivateVariables.executor&quot;: &quot;Run&quot;,
-    &quot;Python.properties.executor&quot;: &quot;Run&quot;,
-    &quot;Python.roshambo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sales_data_importer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ui_intro.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ui_intro_grid.executor&quot;: &quot;Run&quot;,
-    &quot;Python.yeild_keyword.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexander.moyles/Documents/GitHub/CP1890_OOPS/MyWork/Post_test_2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.Alexander_Moyles.executor": "Run",
+    "Python.Baseball_AM.executor": "Run",
+    "Python.Baseball_Class_iterator.executor": "Run",
+    "Python.Baseball_GUI.executor": "Run",
+    "Python.Baseball_SQL.executor": "Run",
+    "Python.Baseball_With_Iterator.executor": "Run",
+    "Python.Baseball_iterator.executor": "Run",
+    "Python.DB_Class_Exercise.executor": "Debug",
+    "Python.Dice_Roller.executor": "Run",
+    "Python.Dice_Roller2.executor": "Run",
+    "Python.Formatting_Numbers.executor": "Run",
+    "Python.Hotel_Program_AM.executor": "Run",
+    "Python.Pig_game_AM.executor": "Run",
+    "Python.Pig_game_encap.executor": "Run",
+    "Python.Practice1_AM.executor": "Run",
+    "Python.Product_Viewer_AM.executor": "Run",
+    "Python.Product_ex.executor": "Run",
+    "Python.Product_program_AM.executor": "Run",
+    "Python.Question_4.executor": "Run",
+    "Python.SQL.executor": "Run",
+    "Python.Sales_with_Inheritance.executor": "Run",
+    "Python.Test_Question_1.executor": "Run",
+    "Python.Test_Question_2.executor": "Run",
+    "Python.Timer.executor": "Run",
+    "Python.UI_Excersize.executor": "Run",
+    "Python.basic_binary_tree.executor": "Run",
+    "Python.basic_linked_list.executor": "Run",
+    "Python.binaryTree_module.executor": "Run",
+    "Python.creating_table.executor": "Run",
+    "Python.database_intro.executor": "Run",
+    "Python.dataclass_intro_AM.executor": "Run",
+    "Python.datetime_AM.executor": "Run",
+    "Python.datetime_excersise_AM.executor": "Run",
+    "Python.decorators_AM.executor": "Run",
+    "Python.decroator_usage_AM.executor": "Run",
+    "Python.dice_override.executor": "Run",
+    "Python.encapsulation_AM.executor": "Run",
+    "Python.inheritance.executor": "Run",
+    "Python.message_box.executor": "Run",
+    "Python.movie_list.executor": "Run",
+    "Python.overriding_defaults.executor": "Run",
+    "Python.product_data.executor": "Run",
+    "Python.product_encap_AM.executor": "Run",
+    "Python.properties-PrivateVariables.executor": "Run",
+    "Python.properties.executor": "Run",
+    "Python.roshambo.executor": "Run",
+    "Python.sales_data_importer.executor": "Run",
+    "Python.ui_intro.executor": "Run",
+    "Python.ui_intro_grid.executor": "Run",
+    "Python.yeild_keyword.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/alexander.moyles/Documents/GitHub/CP1890_OOPS/MyWork/Post_test_2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alexander.moyles\Documents\GitHub\CP1890_OOPS\MyWork\Post_test_2" />
@@ -193,6 +194,7 @@
       <workItem from="1711537873977" duration="4831000" />
       <workItem from="1711971127601" duration="3279000" />
       <workItem from="1711979883033" duration="2826000" />
+      <workItem from="1712142181505" duration="5317000" />
     </task>
     <task id="LOCAL-00001" summary="Dice">
       <option name="closed" value="true" />
@@ -249,6 +251,7 @@
     <SUITE FILE_PATH="coverage/CP1890_OOPS$Baseball_With_Iterator.coverage" NAME="Baseball_With_Iterator Coverage Results" MODIFIED="1711540541346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Class Exercises/Inheritance" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$decorators_AM.coverage" NAME="decorators_AM Coverage Results" MODIFIED="1707135934927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Class Exercises" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$dataclass_intro_AM.coverage" NAME="dataclass_intro_AM Coverage Results" MODIFIED="1707138750183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Class Exercises" />
+    <SUITE FILE_PATH="coverage/CP1890_OOPS$Baseball_GUI.coverage" NAME="Baseball_GUI Coverage Results" MODIFIED="1712148620730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork/Post_test_2" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$Test_Question_1.coverage" NAME="Test_Question_1 Coverage Results" MODIFIED="1708090373898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$Timer.coverage" NAME="Timer Coverage Results" MODIFIED="1707479531932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Class Exercises" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$Formatting_Numbers.coverage" NAME="Formatting_Numbers Coverage Results" MODIFIED="1708347882857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Working With Numbers" />
@@ -256,7 +259,7 @@
     <SUITE FILE_PATH="coverage/CP1890_OOPS$encapsulation_AM.coverage" NAME="encapsulation_AM Coverage Results" MODIFIED="1705927965652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Class Exercises" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$Pig_game_AM.coverage" NAME="Pig_game_AM Coverage Results" MODIFIED="1706273971047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Class Exercises" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$Product_Viewer_AM.coverage" NAME="Product_Viewer_AM Coverage Results" MODIFIED="1705668463238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Class Exercises" />
-    <SUITE FILE_PATH="coverage/CP1890_OOPS$UI_Excersize.coverage" NAME="UI_Excersize Coverage Results" MODIFIED="1711370105315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork/Post_test_2" />
+    <SUITE FILE_PATH="coverage/CP1890_OOPS$UI_Excersize.coverage" NAME="UI_Excersize Coverage Results" MODIFIED="1712147844793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork/Post_test_2" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$ui_intro_grid.coverage" NAME="ui_intro_grid Coverage Results" MODIFIED="1711110242498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork/Post_test_2" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$properties.coverage" NAME="properties Coverage Results" MODIFIED="1707740466432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$creating_table.coverage" NAME="creating_table Coverage Results" MODIFIED="1710160376424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork/Post_test_1/Databases" />
@@ -280,6 +283,7 @@
     <SUITE FILE_PATH="coverage/CP1890_OOPS$datetime_AM.coverage" NAME="datetime_AM Coverage Results" MODIFIED="1707311218161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Class Exercises" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$basic_binary_tree.coverage" NAME="basic_binary_tree Coverage Results" MODIFIED="1710332890721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork/Post_test_1" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$inheritance.coverage" NAME="inheritance Coverage Results" MODIFIED="1708348311280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork/Post_test_1" />
+    <SUITE FILE_PATH="coverage/CP1890_OOPS$Question_4.coverage" NAME="Question_4 Coverage Results" MODIFIED="1712142910822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Assignment_3/CP1890_OOPS/Assignment_3" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$Product_ex.coverage" NAME="Product_ex Coverage Results" MODIFIED="1705322675587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Class Exercises" />
     <SUITE FILE_PATH="coverage/CP1890_OOPS$Baseball_iterator.coverage" NAME="Baseball_iterator Coverage Results" MODIFIED="1711541040696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyWork/Post_test_1" />
   </component>

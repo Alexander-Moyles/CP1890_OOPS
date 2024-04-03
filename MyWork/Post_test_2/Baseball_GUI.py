@@ -125,7 +125,7 @@ def add():
     print("Player was added.")
 
 def player_list():
-    print(f"{'ID':5}{'BO':5}{'Fname':12}{'Lname':12}{'POS':>6}{'AB':>8}{'H':>10}")
+    print(f"{'ID':5}{'BO':5}{'Fname':12}{'Lname':12}{'POS':>6}{'AB':>8}{'H':>10}{'Avg':>10}")
     print("-" * 75)
 
     conn = sqlite3.connect('Baseball.sqlite')
@@ -135,8 +135,9 @@ def player_list():
     conn.close()
 
     for row in rows:
-        if row != None:
-            print(f"{row[0]:<5}{row[1]:<5}{row[2]:12}{row[3]:12}{row[4]:>6}{row[5]:>8}{row[6]:>10}")
+        if row is not None:
+            avg = (row[6] / row[5])
+            print(f"{row[0]:<5}{row[1]:<5}{row[2]:12}{row[3]:12}{row[4]:>6}{row[5]:>8}{row[6]:>10}{avg:10.3f}")
     print()
 
 
@@ -237,5 +238,86 @@ def main():
     print("Bye!")
 
 
+def get_player():
+    pass
+
+
+def save():
+    pass
+
+
+def cancel():
+    pass
+
+
+# Window
+GUI_win = tk.Tk()
+GUI_win.title("Player")
+GUI_win.geometry("350x250")
+frame = ttk.Frame(GUI_win, padding="10 10 10 10")
+frame.pack()
+
+# Buttons
+get_player = tk.Button(frame, text="Get Player", command=get_player)
+save = tk.Button(frame, text="Save Changes", command=save)
+cancel = tk.Button(frame, text="Cancel", command=cancel, padx=10)
+get_player.grid(row=0, column=2, sticky=tk.E)
+save.grid(row=7, column=1, sticky=tk.W)
+cancel.grid(row=7, column=1, sticky=tk.E)
+
+# Player ID
+player_id = ttk.Label(frame, text="Player ID:")
+player_id.grid(column=0, row=0, sticky=tk.E)
+player_id_text = tk.StringVar()
+player_id_entry = ttk.Entry(frame, width=25, textvariable=player_id_text)
+player_id_entry.grid(column=1, row=0, sticky=tk.E)
+
+# First Name
+first_name = ttk.Label(frame, text="First Name:")
+first_name.grid(column=0, row=1, sticky=tk.E)
+first_name_text = tk.StringVar()
+first_name_entry = ttk.Entry(frame, width=25, textvariable=first_name_text)
+first_name_entry.grid(column=1, row=1, sticky=tk.E)
+
+# Last Name
+last_name = ttk.Label(frame, text="Last Name:")
+last_name.grid(column=0, row=2, sticky=tk.E)
+last_name_text = tk.StringVar()
+last_name_entry = ttk.Entry(frame, width=25, textvariable=last_name_text)
+last_name_entry.grid(column=1, row=2, sticky=tk.E)
+
+# Position
+position = ttk.Label(frame, text="Position:")
+position.grid(column=0, row=3, sticky=tk.E)
+position_text = tk.StringVar()
+position_entry = ttk.Entry(frame, width=25, textvariable=position_text)
+position_entry.grid(column=1, row=3, sticky=tk.E)
+
+# At bats
+atbat = ttk.Label(frame, text="At bats:")
+atbat.grid(column=0, row=4, sticky=tk.E)
+atbat_text = tk.StringVar()
+atbat_entry = ttk.Entry(frame, width=25, textvariable=atbat_text)
+atbat_entry.grid(column=1, row=4, sticky=tk.E)
+
+# Hits
+hits = ttk.Label(frame, text="Hits:")
+hits.grid(column=0, row=5, sticky=tk.E)
+hits_text = tk.StringVar()
+hits_entry = ttk.Entry(frame, width=25, textvariable=hits_text)
+hits_entry.grid(column=1, row=5, sticky=tk.E)
+
+# Batting Avg
+bat_avg = ttk.Label(frame, text="Batting Avg:")
+bat_avg.grid(column=0, row=6, sticky=tk.E)
+bat_avg_text = tk.StringVar()
+bat_avg_entry = ttk.Entry(frame, width=25, textvariable=bat_avg_text, state='readonly')
+bat_avg_entry.grid(column=1, row=6, sticky=tk.E)
+
+
+for child in frame.winfo_children():
+    child.grid_configure(padx=5, pady=3)
+
+
 if __name__ == "__main__":
-    main()
+    GUI_win.mainloop()

@@ -159,9 +159,9 @@ def player_list():
     conn.close()
 
     for row in rows:
-        if row != None:
-            print(f"{row[0]:<5}{row[1]:<5}{row[2]:12}{row[3]:12}{row[4]:>6}{row[5]:>8}{row[6]:>10}")
-
+        if row is not None:
+            avg = (row[6] / row[5])
+            print(f"{row[0]:<5}{row[1]:<5}{row[2]:12}{row[3]:12}{row[4]:>6}{row[5]:>8}{row[6]:>10}{avg:10.3f}")
     print()
 
 
