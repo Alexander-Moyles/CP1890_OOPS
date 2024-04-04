@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import messagebox
 import sqlite3
 from dataclasses import dataclass
 
@@ -239,11 +240,55 @@ def main():
 
 
 def get_player():
-    pass
+    try:
+        player = int(player_id_text.get())
+        query = "select * from Player where playerID = '{}'".format(player)
+
+        conn = sqlite3.connect('Baseball.sqlite')
+        c = conn.cursor()
+        c.execute(query)
+        conn.commit()
+        rows = c.fetchall()
+        conn.close()
+
+        for row in rows:
+            avg = (row[6] / row[5])
+
+            first_name_text.set(row[2])
+            last_name_text.set(row[3])
+            position_text.set(row[4])
+            atbat_text.set(row[5])
+            hits_text.set(row[6])
+            bat_avg_text.set(f"{avg:.3f}")
+
+    except ValueError:
+        messagebox.showerror("Player ID not found.", "Please enter a valid integer.")
 
 
 def save():
-    pass
+    try:
+        player = int(player_id_text.get())
+        query = "update Player set  where playerID = '{}'".format(player)
+
+        conn = sqlite3.connect('Baseball.sqlite')
+        c = conn.cursor()
+        c.execute(query)
+        conn.commit()
+        rows = c.fetchall()
+        conn.close()
+
+        for row in rows:
+            avg = (row[6] / row[5])
+
+            first_name_text.set(row[2])
+            last_name_text.set(row[3])
+            position_text.set(row[4])
+            atbat_text.set(row[5])
+            hits_text.set(row[6])
+            bat_avg_text.set(f"{avg:.3f}")
+
+    except ValueError:
+        messagebox.showerror("Player ID not found.", "Please enter a valid integer.")
 
 
 def cancel():
