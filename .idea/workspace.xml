@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="253d8aa9-c38b-488c-b3f1-0695ceddce30" name="Changes" comment="dataclass and decorator">
-      <change afterPath="$PROJECT_DIR$/Assignment_3/Question_2/Question2_Supporting_Files/player_db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment_3/Question_2/Question2_Supporting_Files/player_db.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment_3/Question_2/Question_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment_3/Question_2/Question_2_Functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment_3/Question_2/Question_2_SQL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_3/Question_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_3/Question_4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyWork/Practice/Practice3.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyWork/Practice/Practice3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,6 +211,9 @@
       <workItem from="1712925313676" duration="1288000" />
       <workItem from="1712926626055" duration="23000" />
       <workItem from="1712926692958" duration="128000" />
+      <workItem from="1713266288862" duration="862000" />
+      <workItem from="1713278851103" duration="6000" />
+      <workItem from="1713278863290" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="Dice">
       <option name="closed" value="true" />
